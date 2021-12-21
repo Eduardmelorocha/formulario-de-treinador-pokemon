@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Cadastro de treinador Pokémon</title>
+
+</head>
+
+<body>
+    <div>
+        <h1 id="titulo">Cadastro de treinador Pokémon</h1>
+        <p id="subtitulo"><strong>Complete seus dados de treinador:</strong>
+        </p>
+        <br>
+    </div>
+    <form>
+        <fieldset class="grupo ">
+            <div>
+                <label for=" nome "><strong>Nome</strong></label>
+                <input type="text " name="nome " id="nome " required>
+            </div>
+
+            <div class="grupo ">
+                <label for="Sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text " name="sobrenome " id="sobrenome " required>
+            </div>
+        </fieldset>
+        <div class="grupo ">
+            <label for="email "><strong>Email</strong></label>
+            <input type="email " name="email " id="email " required>
+        </div>
+        <br>
+        <div class="campo">
+            <label><strong>Qual Pokémon você escolheria?</strong></label>
+            <label>
+                <input type="radio" name="pokemon" value="Charmander ">Charmander
+            </label>
+            <label>
+                <input type="radio" name="pokemon" value="Squirtle ">Squirtle
+            </label>
+            <label> 
+                <input type="radio" name="pokemon" value="Bulbasauro ">Bulbasauro
+            </label>
+
+        </div>
+        <div class="campo.cidade">
+            <label><strong>Cidade</strong></label>
+            <select id="cidade ">
+                <option selected disabled value=" ">Selecione</option>
+                <option>Pallet Town</option>
+                <option>Cerulean City</option>
+                <option>Viridian City</option>
+                <option>Lavender Town</option>
+                <option>Celadon City</option>
+                <option>Fuchsia City</option>
+                <option>Vermilion City</option>
+            </select>
+        </div>
+        <br>
+        <fieldset class="grupo">
+            <div id="checkbox">
+                <label><strong>Selecione seu tipo preferido de Pokémon:</strong></label> <br>
+                <input type="checkbox" id="pokemonfogo" name="pokemonfogo " value="fogo ">
+                <label for="pokemonfogo ">fogo</label>
+                <input type="checkbox" id="pokemonagua" name="pokemonagua " value="agua ">
+                <label for="pokemonagua ">água</label>
+                <input type="checkbox" id="pokemongrama " name="pokemongrama " value="grama ">
+                <label for="pokemongrama ">grama</label>
+                <input type="checkbox" id="pokemonpedra " name="pokemonpedra " value="pedra ">
+                <label for="pokemonpedra ">pedra</label>
+                <input type="checkbox" id="pokemonvoador " name="pokemonvoador " value="voador ">
+                <label for="pokemonvoador ">voador</label>
+                <input type="checkbox" id="pokemonpsiquico " name="pokemonpsiquico " value="psiquico ">
+                <label for="pokemonpsiquico ">psíquico</label>
+                <input type="checkbox" id="pokemonfantasma " name="pokemonfantasma " value="fantasma ">
+                <label for="pokemonfantasma ">fantasma</label>
+                <input type="checkbox" id="pokemondragao " name="pokemondragao " value="dragao ">
+                <label for="pokemondragao ">dragão</label>
+                <input type="checkbox" id="pokemonfada " id="pokemonfada " value="fada ">
+                <label for="pokemonfada ">fada</label>
+            </div>
+        </fieldset>
+        <div class="campo ">
+            <br>
+            <label><strong>Um pouco da sua experiência como treinador Pokémon:</strong></label>
+            <textarea name="experiencia " id="experiencia " style="width: 26em " rows="6 "></textarea>
+        </div>
+        <button class="botao " type="submit ">Concluido</button>
+    </form>
+</body>
+
+</html>
